@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IndiHome Customer Service</title>
+  <link rel="stylesheet" href="cssindibeta.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="main-header indihome">
+  <div class="header-container">
+    <a href="index.html" class="btn-back">← Kembali</a>
+    <div>
+      <h1>IndiHome Customer Service</h1>
+      <p>Layanan Pelanggan Resmi</p>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="container">
+
+  <!-- PAKET -->
+  <section class="product">
+    <h2>Paket Internet IndiHome</h2>
+
+    <div class="cards">
+
+      <div class="card" onclick="openModal('30 Mbps','Rp280.000')">
+        <h3>30 Mbps</h3>
+        <p class="price">Rp280.000 / bulan</p>
+        <button>Pilih Paket</button>
+      </div>
+
+      <div class="card popular" onclick="openModal('50 Mbps','Rp350.000')">
+        <span class="badge">Terlaris</span>
+        <h3>50 Mbps</h3>
+        <p class="price">Rp350.000 / bulan</p>
+        <button>Pilih Paket</button>
+      </div>
+
+      <div class="card" onclick="openModal('100 Mbps','Rp550.000')">
+        <h3>100 Mbps</h3>
+        <p class="price">Rp550.000 / bulan</p>
+        <button>Pilih Paket</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>FAQ Gangguan</h2>
+
+    <div class="faq-box">
+      <p><b>Internet Lambat:</b> Restart modem dan uji via LAN.</p>
+      <p><b>LOS Merah:</b> Gangguan fiber, perlu tiket teknisi.</p>
+      <p><b>Internet Mati:</b> Cek lampu PON dan adaptor.</p>
+      <p><b>WiFi Putus:</b> Atur ulang posisi modem.</p>
+      <p><b>Tagihan Naik:</b> Cek detail billing di aplikasi.</p>
+    </div>
+  </section>
+
+  <!-- CHAT -->
+  <section class="status-area">
+  <h2>Cek Status Jaringan Area</h2>
+
+  <div class="status-box">
+    <select id="areaSelect">
+      <option value="">Pilih Wilayah</option>
+      <option value="Jakarta">Jakarta</option>
+      <option value="Malang">Malang</option>
+      <option value="Surabaya">Surabaya</option>
+      <option value="Bandung">Bandung</option>
+    </select>
+
+    <button onclick="checkArea()">Cek Status</button>
+
+    <div id="resultArea" class="result-area"></div>
+  </div>
+</section>
+
+
+</main>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Konfirmasi Berlangganan</h2>
+    <p id="paketText"></p>
+
+    <input type="text" id="nama" placeholder="Nama Lengkap">
+    <input type="text" id="alamat" placeholder="Alamat Pemasangan">
+
+    <button onclick="sendPaket()">Lanjut ke WhatsApp</button>
+  </div>
+</div>
+
+<script src="jsindibeta.js"></script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/696dd19c9706f21981910d55/1jfaflj0b';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>

@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* ================= GLOBAL ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(180deg, #0b0c10 0%, #1f2833 60%, #0b0c10 100%);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================= HEADER ================= */
+
+.main-header {
+  background: linear-gradient(135deg, #0b0c10 0%, #1f2833 100%);
+  padding: 18px 0;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo i {
+  color: #66fcf1;
+  font-size: 1.6rem;
+}
+
+.logo h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s ease;
+}
+
+.btn-outline {
+  border: 1px solid #66fcf1;
+  color: #66fcf1;
+}
+
+.btn-outline:hover {
+  background: #45a29e;
+  color: #0b0c10;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff9f1c, #f77f00);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(247,127,0,0.6);
+}
+.btn-outline {
+  border: 1px solid #66fcf1;
+  color: #66fcf1;
+}
+
+/* ================= INTRO ================= */
+
+.intro {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+.intro h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.intro p {
+  color: #a1a1aa;
+  font-size: 0.95rem;
+}
+
+/* ================= MAIN ================= */
+
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 20px 80px;
+  flex-wrap: wrap;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  width: 260px;
+  padding: 35px 25px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1f2933 0%, #0b0c10 100%);
+  text-align: center;
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.25);
+}
+
+.provider-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #66fcf1;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+/* ================= STATUS ================= */
+
+.status {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: #16a34a;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #16a34a;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.6; }
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  width: 100%;
+  background: linear-gradient(135deg, #0b0c10 0%, #1f2833 100%);
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-left h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.footer-left p,
+.footer-right p {
+  font-size: 0.85rem;
+  color: #a1a1aa;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
