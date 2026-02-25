@@ -7,58 +7,40 @@
   <link rel="stylesheet" href="cssbiznet.css">
 </head>
 <body>
-
-<!-- HEADER -->
 <header class="main-header biznet">
   <div class="header-container">
     <a href="index.html" class="btn-back">← Kembali</a>
-
-    <div class="logo-container">
-      <img src="logo-biznet.png" alt="Biznet Logo" class="logo">
       <div class="header-text">
         <h1>Biznet Customer Service</h1>
         <p>Layanan Pelanggan Resmi</p>
       </div>
     </div>
-    
   </div>
 </header>
-
-
 <main class="container">
-
-  <!-- PAKET -->
   <section class="product">
     <h2>Paket Internet Biznet</h2>
-
     <div class="cards">
-
       <div class="card" onclick="openModal('50 Mbps','Rp325.000')">
         <h3>50 Mbps</h3>
         <p class="price">Rp325.000 / bulan</p>
         <button>Pilih Paket</button>
       </div>
-
       <div class="card popular" onclick="openModal('100 Mbps','Rp475.000')">
         <span class="badge">Favorit</span>
         <h3>100 Mbps</h3>
         <p class="price">Rp475.000 / bulan</p>
         <button>Pilih Paket</button>
       </div>
-
       <div class="card" onclick="openModal('150 Mbps','Rp650.000')">
         <h3>150 Mbps</h3>
         <p class="price">Rp650.000 / bulan</p>
         <button>Pilih Paket</button>
       </div>
-
     </div>
   </section>
-
-  <!-- FAQ -->
   <section class="faq">
     <h2>FAQ Gangguan</h2>
-
     <div class="faq-box">
       <p><b>Internet Lambat:</b> Restart router dan cek perangkat.</p>
       <p><b>Internet Mati:</b> Pastikan lampu LOS tidak merah.</p>
@@ -67,11 +49,8 @@
       <p><b>Upgrade Paket:</b> Bisa dilakukan tanpa putus koneksi.</p>
     </div>
   </section>
-
-  <!-- STATUS AREA (SAMA SEPERTI INDIHOME) -->
   <section class="status-area">
     <h2>Cek Status Jaringan Area</h2>
-
     <div class="status-box">
       <select id="areaSelect">
         <option value="">Pilih Wilayah</option>
@@ -80,32 +59,22 @@
         <option value="Surabaya">Surabaya</option>
         <option value="Malang">Malang</option>
       </select>
-
       <button onclick="checkArea()">Cek Status</button>
-
       <div id="resultArea" class="result-area"></div>
     </div>
   </section>
-
 </main>
-
-<!-- MODAL -->
 <div class="modal" id="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
     <h2>Konfirmasi Berlangganan</h2>
     <p id="paketText"></p>
-
     <input type="text" id="nama" placeholder="Nama Lengkap">
     <input type="text" id="alamat" placeholder="Alamat Pemasangan">
-
     <button onclick="sendPaket()">Lanjut ke WhatsApp</button>
   </div>
 </div>
-
 <script src="fungsibiznet.js"></script>
-
-<!-- TAWK.TO -->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -117,6 +86,6 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-
 </body>
 </html>
+
